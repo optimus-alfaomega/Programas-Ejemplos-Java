@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.springframework.boot' version '2.2.4.RELEASE'
+}
+
+group = 'io.github.picodotdev.blogbitix.jmx'
+sourceCompatibility = '11'
+
+application {
+    //mainClassName = 'io.github.picodotdev.blogbitix.jmx.java.Main'
+    mainClassName = 'io.github.picodotdev.blogbitix.jmx.springboot.Main'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(platform("org.springframework.boot:spring-boot-dependencies:2.2.4.RELEASE"))
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
+run {
+    systemProperties = [
+        'com.sun.management.config.file': 'jmxremote.properties'	
+    ]
+}

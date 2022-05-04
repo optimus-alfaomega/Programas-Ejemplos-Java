@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = 'io.github.picodotdev.blogbitix.javadoc.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile files("/usr/lib/jvm/default/lib/tools.jar")
+}
+
+javadoc {
+    options.charSet = 'UTF-8'
+    options.encoding = 'UTF-8'
+    options.tagletPath = [new File ('build/classes/java/main/')]
+    options.taglets = ['io.github.picodotdev.blogbitix.javadoc.TodoTaglet']
+    options.stylesheetFile = new File('src/main/resources/stylesheet.css')
+	//options.footer = "Copyleft © 2017 Blog Bitix"
+	//options.bottom = "Copyleft © 2017 Blog Bitix"
+}
+
+task javadocZip(type: Zip) {
+    dependsOn javadoc
+    classifier 'javadoc'
+    from 'build/docs/javadoc/'
+}
+
+artifacts {
+    archives javadocZip
+}
+

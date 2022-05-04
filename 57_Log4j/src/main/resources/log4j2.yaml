@@ -1,0 +1,17 @@
+configuration:
+  status: warn
+
+  appenders:
+    console:
+      name: STDOUT
+      patternLayout:
+        pattern: "%d{DEFAULT} %X{uuid} %-5level %60.60logger %msg%n"
+        replace: 
+          regex: "(\\d{4} \\d{4} \\d{4} \\d{1})(?=\\d{3})|(\\d{6})(?=\\d{2}[A-Z])"
+          replacement: "**********"
+
+  loggers:
+    root:
+      level: info
+      appenderRef:
+        ref: STDOUT

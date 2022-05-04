@@ -1,0 +1,7 @@
+#Indican los archivos que no serán parte de control de versiones.
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
