@@ -1,8 +1,6 @@
 # APRENDE JAVA CON EJERCICIOS
-
-Ejemplos y soluciones a los ejercicios del libro **"Aprende Java con Ejercicios"**.
-
-<a href="https://leanpub.com/aprendejava">![Aprende Java con Ejercicios](title_page.png)</a>
+    Ejemplos y soluciones a los ejercicios del libro **"Aprende Java con Ejercicios"**.
+    <a href="https://leanpub.com/aprendejava">![Aprende Java con Ejercicios](title_page.png)</a>
 
 Puedes descargar el libro mediante el siguiente enlace:
 <http://leanpub.com/aprendejava>
@@ -29,11 +27,11 @@ Para complementar los principios de la programación orientada a objetos, se apl
 
 ## Sintaxis básica
 
-* Compilar código Java: `$ javac filename.java`
-* Ejecutar código: `$ java filename`
-* Start a graphical console to monitor and manage Java applications: `jconsole`
+      * Compilar código Java: `$ javac filename.java`
+      * Ejecutar código: `$ java filename`
+      * Start a graphical console to monitor and manage Java applications: `jconsole`
 
-[Tools and Commands Reference](https://docs.oracle.com/en/java/javase/11/tools/tools-and-command-reference.html)
+      [Tools and Commands Reference](https://docs.oracle.com/en/java/javase/11/tools/tools-and-command-reference.html)
 
 ----
 
@@ -48,7 +46,7 @@ Comentarios multilínea
 * Comentarios JavaDoc lucen así. Suelen describir la clase o varios atributos de una clase.
 */
 
-// Todos los programas importan automáticamente el paquete 'java.lang' que define la clase 'System'
+ // Todos los programas importan automáticamente el paquete 'java.lang' que define la clase 'System'
 // Importa la clase 'ArrayList' dentro del paquete 'java.util'
 import java.util.ArrayList;
 // Importa todas las clases dentro del paquete 'java.security'
@@ -2836,5 +2834,6 @@ En resumen, no utilice una clase de utilidad estática o un *singleton* para imp
 #### Item 6: Avoid creating unnecessary objects
 
 (todo)
-#   J a v a - B a s i c o  
- 
+#� �J�a�v�a�-�B�a�s�i�c�o�
+�
+�
